@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title%}
+Home
+{% endblock %} 
+{% block content%}
+
+{%load static%}
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="{% static '/images/img3.jpg'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="height: 100px ; color:black; font-family: Verdana, Geneva, Tahoma, sans-serif;">canvasser.com</h1>
+          <h2 style="height: 300px ; color:black; line-height: 30px;">Nobody can go back and start a new beginning, but anyone can start today and make a new ending.</h2>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{% static '/images/img2.jpg'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+          <h1 style="height: 100px ; color:black; font-family: Verdana, Geneva, Tahoma, sans-serif;">canvasser.com</h1>
+          <h2 style="height: 450px ; color:black; line-height: 30px;">When we strive to become better than we are, everything around us becomes better too</h2>
+        </div>
+      
+        
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{% static '/images/img1.jpg'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+          <h1 style="height: 100px ; color:black; font-family: Verdana, Geneva, Tahoma, sans-serif;">canvasser.com</h1>
+          <h2 style="height: 450px ; color:black; line-height: 30px;">Always work hard and have fun in what you do because I think that's when you're more successful</h2>
+        </div>
+        
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+{% endblock %}
+

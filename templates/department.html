@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title%}
+Departments
+{% endblock %}
+{% block content%}
+<h1 class="text-center">Categories for You</h1>
+<hr>
+{% for d in dept %}
+<div class="mx-auto w-50 bg-warning text-center  p-3 my-4 border-success rounded" >
+    <h1><a class="nav-link text-black " href="{% url 'department'%}">{{d.dept_name}}</a></h1>
+    
+    <p>{{d.dept_description}}</p>
+</div>
+{% endfor %}
+{% endblock %} 

@@ -1,0 +1,159 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0 ;
+
+}
+header a{
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+header .container{
+    
+    display: flex;
+    justify-content:space-between ;
+    
+    margin: auto;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 2.5rem;
+
+}
+
+.banner-container{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(./pexels-andrea-piacquadio-842548.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    align-items: center;
+}
+.banner-container .container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.left-section{
+    width: 800px;
+    align-self: flex-start;
+}
+.left-section h1{
+    margin: 0px;
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    word-spacing: 10px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 10px;
+}
+.left-section p{
+    margin: 0 ;
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 20px;
+    color: black;
+    margin-top: 15px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.right-section{
+    width: 300px;
+    
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: 0 5px 6px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.right-section h3{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: white;
+    padding-left: 75px;
+    
+    
+
+
+}
+
+.input-group{
+    width: 200px;
+    margin: 30px auto; 
+    display: flex;
+    flex-direction: column; 
+    position: relative;   
+    
+
+}
+.input-group label{
+    color: white;
+    position: absolute;
+    top: 10px;
+    transition: 0.5s ease-in-out; 
+}
+
+.input-group input{
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    border-bottom: 1px solid white;
+    background-color: unset;
+    color: white;
+
+}
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+    color: white;
+    top: -10px;
+    font-size: 12;
+}
+
+.submit-section{
+    text-align: center;
+    border-color: black;
+    
+}
+
+.submit-button{
+    background-color: white;
+    color: black;
+    border: 20px;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 0.25rem;
+    width: 100px;
+    cursor: pointer;
+    
+
+}
+.submit-button:hover{
+    background-color: bisque ;
+
+    
+}
+
